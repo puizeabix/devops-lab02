@@ -55,8 +55,9 @@ jobs:
                 scan-type: 'fs'
                 ignore-unfixed: true
                 format: 'sarif'
+                exit: 1
                 output: 'trivy-results.sarif'
-                severity: 'CRITICAL'
+                severity: 'HIGH'
             - uses: actions/upload-artifact@v3
               name: Save Code vulnerability scan report
               with:
