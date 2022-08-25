@@ -24,7 +24,7 @@ func TestListBlogResponseError(t *testing.T) {
 	}
 
 	result := l.error()
-	if result == expected {
+	if result != expected {
 		t.Errorf("got %v, expected %v", result, expected)
 	}
 }
