@@ -71,7 +71,7 @@ jobs:
           with:
             name: code-coverage-report
             path: ./src
-        - run: python coverage.py 10
+        - run: python coverage.py 1
           working-directory: ./src
           name: Simple Quality Gate
   docker-build:
